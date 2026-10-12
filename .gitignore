@@ -1,0 +1,3 @@
+# Keep client files out of git. Only the README in clients/ ships.
+02-memory/clients/*
+!02-memory/clients/README.md
