@@ -32,7 +32,7 @@ Do that three times. If it catches something you'd have missed, it's earned a tr
 - `fact-checker.md` — Agent 2's instructions
 - `setup.md` — the options for running them on a trigger in Claude and ChatGPT
 - `scheduled-review.md` — the full setup for one of those options: a private repo of client files and drafts, and a Claude scheduled task that reviews anything new every morning
-- The worked example — a run on a first-30-days plan for a real local business with six seeded mistakes, the reviewer's output, the fact-checker's output, the score, a comparison against the same run in ChatGPT, and a later run of the current prompts on a schedule — is in `examples/`. Read it after your first manual run.
+- The worked example — a run on a first-30-days plan for a real local business with six seeded mistakes, the reviewer's output, the fact-checker's output, the score, a comparison against the same run in ChatGPT, and a later run of the current prompts on a schedule — is in [`../examples/local-plumber/03-reviewer-run/`](../examples/local-plumber/03-reviewer-run/). Read it after your first manual run.
 
 ## Notice the ladder
 
