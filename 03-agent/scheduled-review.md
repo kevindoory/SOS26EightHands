@@ -4,7 +4,7 @@ An example setup, from a fresh copy of this repo to a review report. Allow time 
 
 **Intended result (not a verified recurring deployment):** on weekday mornings, a scheduled task checks a private repository for changed drafts, runs the reviewer and fact-checker, and returns a report for human approval. Notifications and access depend on the account and configuration. A one-off run was observed; recurring operation has not been established.
 
-**How this was tested:** On Oct 12, 2026, a one-off Claude scheduled task ran the same steps on the worked example, with nobody watching: clone, two separate agents, report by email and push. It caught all six seeded mistakes plus about nineteen real ones, with one false flag that the fact-checker caught. The full output is in [`../examples/local-plumber/03-reviewer-run/first-30-days-SCHEDULED-RUN.md`](../examples/local-plumber/03-reviewer-run/first-30-days-SCHEDULED-RUN.md). The private-repo version below is the same mechanism pointed at your own files. ChatGPT has its own scheduled tasks, but this recipe wasn't tested there.
+**How this was tested:** On Oct 12, 2026, a one-off Claude scheduled task ran the same steps on the worked example, with nobody watching: clone, two separate agents, report by email and push. It caught all six seeded mistakes plus about nineteen real ones, with one false flag that the fact-checker caught. The full output is in [`../examples/local-plumber/03-reviewer-run/first-30-days-SCHEDULED-RUN.md`](../examples/local-plumber/03-reviewer-run/first-30-days-SCHEDULED-RUN.md). The private-repo version below is an adaptation of that mechanism and has not been tested end to end. ChatGPT has its own scheduled tasks, but this recipe wasn't tested there.
 
 ## Before you start
 
@@ -59,7 +59,7 @@ Then paste the task prompt:
 
 You're running an unattended review of client drafts. No one is watching; don't ask questions.
 
-1. Clone `github.com/[your-username]/review-desk`.
+1. Clone `https://github.com/[your-username]/review-desk.git` using the task environment's authorized GitHub connection. If the clone fails, report the error and stop.
 2. Find candidate drafts added or changed in the last **96 hours** (to cover weekends) using `git log --since="96 hours ago" --name-only --pretty=format: -- drafts/`. Deduplicate the paths, exclude deleted files, and review only files that still exist. This is a rolling window, **not** a true since-last-successful-run checkpoint: it can re-review the same file on multiple weekdays and can miss work after a longer outage. If there are none, reply "No new drafts." and stop.
 3. For each draft, the client is the folder name it sits in under `drafts/`. Read the six files in `clients/<that-name>/`. If that folder is missing or has fewer than six files, report it for that draft and skip it.
 4. **Agent 1 — Reviewer.** Spawn a subagent. Give it only: the prompt section of `prompts/reviewer.md` (between the `---` lines), the six client files, and the draft, all pasted in. Tell it not to read any other files. Keep its output verbatim.
