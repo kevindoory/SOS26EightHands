@@ -2,7 +2,7 @@
 
 Checked October 2026. Feature names change — if a button here has moved, the shape hasn't. You need three things: the prompts, the client folder, and something that kicks the job off.
 
-**What was tested:** the manual version, in Claude and ChatGPT. The scheduled and always-on versions below are the shape of the setup, from each platform's release notes — not a tested recipe. Plans and permissions vary. If you automate, do one trial run and check it before you trust the schedule.
+**What was tested:** the reviewer and fact-checker prompts were run manually in Claude and ChatGPT. Separately, one unattended, one-off Claude scheduled-task run of the worked example was documented in [`scheduled-review.md`](scheduled-review.md). That does **not** establish that the private-repository walkthrough below works for every account, that recurring weekday runs were tested, or that ChatGPT's scheduled/always-on options were tested. Plans, permissions, and feature availability vary. Test your own setup before trusting it.
 
 ## The manual version (start here)
 

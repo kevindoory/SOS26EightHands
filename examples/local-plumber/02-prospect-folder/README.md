@@ -5,7 +5,7 @@
 Built October 12, 2026. Revised the same day after a cross-check in ChatGPT (see "What the cross-check changed"). It's a snapshot. Their site will change.
 
 **How to read it.** Factual claims carry a source tag. Inferences are labeled. `goals.md` holds the proposals.
-- A tagged line (`[site:home]`, `[gbp]`…) is an observation you can go check.
+- A tagged line (`[site:home]`, `[gbp]`…) identifies the **claimed source at capture time**. The original raw captures are not included, and identifying URLs are replaced with placeholders; these tags are **not independently reproducible citations** from this public repository.
 - A line starting **Inference:** is reasoning from the observations. It could be wrong.
 - `goals.md` is **what we'd propose** — a proposal, labeled as one. It is not what Example Plumbing has said.
 
@@ -15,9 +15,9 @@ Built October 12, 2026. Revised the same day after a cross-check in ChatGPT (see
 
 | Tag | Source | Captured |
 |---|---|---|
-| `[site:home]` | https://www.example.com/ | 2026-10-12 |
-| `[site:about]` | https://www.example.com/about | 2026-10-12 |
-| `[site:blog]` | https://www.example.com/blog (index page only) | 2026-10-12 |
+| `[site:home]` | Anonymized original homepage (URL withheld; `example.com` is a placeholder, not the audited site) | 2026-10-12 |
+| `[site:about]` | Anonymized original about page (URL withheld) | 2026-10-12 |
+| `[site:blog]` | Anonymized original blog index (index page only; URL withheld) | 2026-10-12 |
 | `[site:schema]` | JSON-LD in the homepage source | 2026-10-12 |
 | `[gbp]` | Google Business Profile fields (name, address, phone, hours, rating, count, five most recent reviews) via Google Places | 2026-10-12 |
 | `[local-results]` | Google local results for "plumber [City] [State]", "commercial plumber [City] [State]", "septic service [City] [State]", returned as one merged list — **per-query positions are not recoverable from this capture** | 2026-10-12 |

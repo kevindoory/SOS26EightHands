@@ -22,11 +22,11 @@ Six files. Plain markdown. No tool required to write them. Any AI you can attach
 ## What's in this folder
 
 - `_template/` — the six files, blank, with prompts for what goes in each
-- `examples/` — a filled-in *prospect* file for a real local business, built entirely from public sources. Every line is tagged with where it came from. See its README for how a prospect file differs from a client file.
+- [`../examples/local-plumber/02-prospect-folder/`](../examples/local-plumber/02-prospect-folder/) — a filled-in *prospect* file for a real local business, built entirely from public sources. Every line is tagged with where it came from. See its README for how a prospect file differs from a client file.
 
 ## Setting it up
 
-1. Download the repo (green **Code** button → **Download ZIP**) and unzip it. Copy the `_template` folder into `clients`, and rename the copy to your client's name. (`clients/` is yours; the worked example lives in `examples/`, so you never have to touch it.)
+1. Download the repo (green **Code** button → **Download ZIP**) and unzip it. Copy the `_template` folder into `clients`, and rename the copy to your client's name. (`clients/` is yours; the worked example lives in the repository's top-level `examples/`, so you never have to touch it.)
 2. Open each file in any text editor and fill it in. Spend an hour writing down what's in your head. The `preferences.md` file — what they've rejected — is the one that pays off most. AI can help you gather and draft (the worked example was built that way), but you check every line, and the client's own words beat anything it finds.
 3. Every week, add one line to `log.md`. That's the maintenance.
 

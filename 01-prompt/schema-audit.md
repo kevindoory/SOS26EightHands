@@ -40,7 +40,7 @@ The prompt has no business baked in. It works on any page.
 
 1. **Get the page text.** Open the page in Chrome or Edge. Click into the page, press Ctrl+A (Cmd+A on a Mac), then Ctrl+C.
 2. **Get the JSON-LD.** Press Ctrl+U (Cmd+Option+U on a Mac) to open the page source. Press Ctrl+F and search for `ld+json`. Copy each block from `<script type="application/ld+json">` through its `</script>`. There may be more than one.
-3. **Nothing found?** Some sites add structured data with JavaScript after the page loads, so it's not in the source. Paste the URL into Google's [Rich Results Test](https://search.google.com/test/rich-results) — it loads the page the way Google does and shows what it found. If that shows nothing either, the page has none; say so when you paste.
+3. **Nothing found?** Some sites add structured data with JavaScript after the page loads, so it's not in the source. Paste the URL into Google's [Rich Results Test](https://search.google.com/test/rich-results) — it loads the page the way Google does and shows what it found. If that shows nothing either, report that no structured data was detected by these checks. Do not conclude the page has none under all conditions; fetching or rendering limitations can affect detection.
 4. Paste the prompt, then the page text, then the JSON-LD.
 
 ## Before you trust it
