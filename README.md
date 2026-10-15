@@ -40,7 +40,7 @@ Two layers. The top-level folders are generic — every prompt says what you pas
 
 The agents in `03-agent/` are instructions — prompts you paste, or save as a scheduled task. They aren't code you run. `setup.md` in that folder lists the options for putting them on a trigger; `scheduled-review.md` walks through one end to end.
 
-**What was tested:** every prompt here was run by hand, in Claude and in ChatGPT, on the worked example. The scheduled and automated setups in `03-agent/setup.md` describe the shape; they weren't tested end to end for this repo. Other tools will need adjusting.
+**What was tested:** the prompts were run manually in Claude and ChatGPT on the worked example. A separate one-off, unattended Claude scheduled-task run on the worked example is documented in [`03-agent/scheduled-review.md`](03-agent/scheduled-review.md). That single run does not validate the full private-repo walkthrough, recurring operation, or ChatGPT automation. Other tools and accounts will need their own tests.
 
 ## Start here
 
