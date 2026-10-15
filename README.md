@@ -50,7 +50,7 @@ Then test it: run it on two of those deliverables you already did by hand, and c
 
 ## About the example
 
-`examples/` runs all three rungs on one real local business, using only public sources: its site, its Google Business Profile, and local search results, all captured October 12, 2026. It's independent research for teaching — the business didn't commission it and isn't a client. Sourced observations carry a tag; inferences are labeled; the proposals are in one file and say so. Raw captures (full page text, search results) aren't included.
+`examples/` runs all three rungs on one real local business, using only public sources: its site, its Google Business Profile, and local search results, all captured October 12, 2026. It's independent research for teaching — the business didn't commission it and isn't a client. Observations carry source tags; inferences are labeled; the proposals are in one file and say so. The business is anonymized, original URLs are withheld, and raw captures (full page text, search results) aren't included. The worked example therefore demonstrates the method but is **not fully independently reproducible** from the public repo.
 
 To make your own: copy `02-memory/_template/` to `02-memory/clients/<your-client>/` and fill it in. Nothing in `examples/` needs editing.
 
