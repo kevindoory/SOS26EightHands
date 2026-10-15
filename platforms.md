@@ -8,7 +8,7 @@ Checked the week of October 12, 2026. If a cell is out of date by the time you r
 | **2 · Memory** | Projects with memory (shared across chat and Cowork); the desktop app reads a local folder directly | Projects with project-only memory; Library pulls from Drive, Box, Dropbox, SharePoint |
 | **3 · Agent** | Scheduled tasks that run in the cloud with your machine off (so they can't see files on that machine — point them at a Project or a connected drive); Claude Code subagents for reviewer chains | Scheduled tasks + webhooks; "Dots" always-on agents (launched Sept 29, 2026) |
 
-**Tested for this repo:** rungs 1 and 2, and the rung 3 prompts run by hand, in both. The rung 3 automation features are listed from each platform's release notes, not tested end to end here. Plans and permissions vary — check yours.
+**Tested for this repo:** rungs 1 and 2 and the rung 3 prompts were run by hand in Claude and ChatGPT. One unattended, one-off Claude scheduled-task run of the worked example is documented in [`03-agent/scheduled-review.md`](03-agent/scheduled-review.md). Recurring private-repo automation and ChatGPT automation were not validated end to end. Feature descriptions above are platform-dependent and may change; check current official documentation and your account's permissions before following them.
 
 ## Elsewhere
 
